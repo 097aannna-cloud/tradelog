@@ -1,0 +1,24 @@
+{
+  "expo": {
+    "name": "TradeLog",
+    "slug": "tradelog",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "scheme": "tradelog",
+    "backgroundColor": "#0A0B0D",
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.tradelog.app"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#0A0B0D"
+      },
+      "package": "com.tradelog.app"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-secure-store"
+    ]
+  }
+}
