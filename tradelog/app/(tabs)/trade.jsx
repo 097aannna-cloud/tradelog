@@ -41,7 +41,6 @@ export default function Trade() {
       const list = Array.isArray(d.data) ? d.data : []
 setExpiries(list)
 if (list[0]) { setExpiry(list[0]); await loadChain(list[0]) }
-      if (list[0]) { setExpiry(list[0]); await loadChain(list[0]) }
     } catch(e) {}
     setLoading(false)
   }
