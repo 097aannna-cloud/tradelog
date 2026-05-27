@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import { Stack } from 'expo-router'
 import { StatusBar } from 'expo-status-bar'
+import { SafeAreaProvider } from 'react-native-safe-area-context'
 import { supabase } from '../lib/supabase'
 import { useStore } from '../lib/store'
 
@@ -46,9 +47,9 @@ export default function RootLayout() {
   if (!ready) return null
 
   return (
-    <>
+    <SafeAreaProvider>
       <StatusBar style="light" backgroundColor="#0A0B0D"/>
       <Stack screenOptions={{ headerShown: false }}/>
-    </>
+    </SafeAreaProvider>
   )
 }
