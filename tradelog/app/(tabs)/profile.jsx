@@ -1,5 +1,4 @@
-import { View, Text, ScrollView, TouchableOpacity, StyleSheet } from 'react-native'
-import { SafeAreaView } from 'react-native-safe-area-context'
+import { View, Text, ScrollView, TouchableOpacity, StyleSheet, Dimensions } from 'react-native'import { SafeAreaView } from 'react-native-safe-area-context'
 import { useStore } from '../../lib/store'
 import { supabase } from '../../lib/supabase'
 import { C, R, S } from '../../theme'
