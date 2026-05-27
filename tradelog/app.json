@@ -3,21 +3,17 @@
     "name": "TradeLog",
     "slug": "tradelog",
     "version": "1.0.0",
+    "sdkVersion": "54.0.0",
     "orientation": "portrait",
     "scheme": "tradelog",
-    "platforms": ["ios", "android"],
     "backgroundColor": "#0A0B0D",
-    "plugins": [
-      "expo-router",
-      [
-        "expo-secure-store",
-        {
-          "faceIDPermission": "Allow TradeLog to use Face ID"
-        }
-      ]
-    ],
+    "platforms": ["ios", "android", "web"],
+    "plugins": ["expo-router", "expo-secure-store"],
     "experiments": {
       "typedRoutes": true
+    },
+    "web": {
+      "bundler": "metro"
     }
   }
 }
