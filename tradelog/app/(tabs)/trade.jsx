@@ -12,7 +12,8 @@ export default function Trade() {
     startTimer, getScreenSecs, addStrikeView, sessionId } = useStore()
 
   const [sym,       setSym]       = useState(SYMBOLS[0])
-  const [expiries,  setExpiries]  = useState([])
+  const [expiries, setExpiries] = useState([])
+const [loadingExp, setLoadingExp] = useState(false)
   const [expiry,    setExpiry]    = useState('')
   const [chain,     setChain]     = useState(null)
   const [loading,   setLoading]   = useState(false)
