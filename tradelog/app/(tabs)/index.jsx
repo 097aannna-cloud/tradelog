@@ -11,12 +11,12 @@ export default function Home() {
     closedTrades, setClosedTrades, closeTrade } = useStore()
   const [refreshing, setRefreshing] = useState(false)
 
-  useEffect(() => { if (user) load() }, [user])
+  useEffect(() => { if (user?.id) load() }, [user])
 
   async function load() {
     const { data } = await supabase
       .from('paper_trades').select('*')
-      .eq('user_id', user.id)
+      .eq('user_id', user?.id)
       .order('created_at', { ascending: false })
     if (data) {
       setOpenTrades(data.filter(t => t.status === 'OPEN'))
