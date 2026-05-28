@@ -36,15 +36,18 @@ const [loadingExp, setLoadingExp] = useState(false)
   useEffect(()=>{ startTimer(); loadExpiries() }, [sym])
 
   async function loadExpiries() {
-    setLoading(true); setChain(null)
-    try {
-      const d = await getExpiries(sym.scrip, sym.seg)
-      const list = Array.isArray(d.data) ? d.data : []
-setExpiries(list)
-if (list[0]) { setExpiry(list[0]); await loadChain(list[0]) }
-    } catch(e) {}
-    setLoading(false)
-  }
+  setLoading(true); setChain(null)
+  try {
+    const d = await getExpiries(sym.scrip, sym.seg)
+    const list = Array.isArray(d.data) ? d.data : []
+    setExpiries(list)
+    if (list[0]) {
+      setExpiry(list[0])
+      await loadChain(list[0])
+    }
+  } catch(e) {}
+  setLoading(false)
+}
 
   async function loadChain(exp) {
     setLoading(true)
