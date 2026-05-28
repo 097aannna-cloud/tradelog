@@ -1,5 +1,5 @@
 const BASE   = 'https://api.dhan.co/v2'
-const TOKEN  = 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3MiOiJkaGFuIiwicGFydG5lcklkIjoiIiwiZXhwIjoxNzc5NzMyNzQ5LCJpYXQiOjE3Nzk2NDYzNDksInRva2VuQ29uc3VtZXJUeXBlIjoiU0VMRiIsIndlYmhvb2tVcmwiOiIiLCJkaGFuQ2xpZW50SWQiOiIxMTAyMTQxMzg5In0.ZR_s8i7_5NRT9X1UAofv3Q16HJGVCMoOTMy1TvqzydxuwzmQRWBT9Kvf12YYHOJmAytUu4kZqyWcCXzb5MIH1Q'   // paste your token
+const TOKEN  = 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3MiOiJkaGFuIiwicGFydG5lcklkIjoiIiwiZXhwIjoxNzgwMDUyMjM2LCJpYXQiOjE3Nzk5NjU4MzYsInRva2VuQ29uc3VtZXJUeXBlIjoiU0VMRiIsIndlYmhvb2tVcmwiOiIiLCJkaGFuQ2xpZW50SWQiOiIxMTAyMTQxMzg5In0.ufXbBdK_V9DZYfsQ_OvGtR9w51sQu3VA84qKpb-uAxFm-jxSjukXQ21KPKi6lyb29fNZgAr618nXxLelWHcM9w'   // paste your token
 const CLIENT = '1102141389'    // paste your client id
 
 const H = {
