@@ -1,4 +1,5 @@
-import { View, Text, ScrollView, TouchableOpacity, StyleSheet, Dimensions } from 'react-native'import { SafeAreaView } from 'react-native-safe-area-context'
+import { View, Text, ScrollView, TouchableOpacity, StyleSheet, Dimensions } from 'react-native'
+import { SafeAreaView } from 'react-native-safe-area-context'
 import { useStore } from '../../lib/store'
 import { supabase } from '../../lib/supabase'
 import { C, R, S } from '../../theme'
@@ -103,7 +104,7 @@ export default function Profile() {
   )
 }
 
-const sw2=(Dimensions?.get?.('window')?.width-S.lg*2)/2-S.sm/2||160
+const sw2 = 160
 const s = StyleSheet.create({
   safe:       { flex:1, backgroundColor:C.bg },
   scroll:     { flex:1, padding:S.lg },
